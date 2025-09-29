@@ -91,7 +91,7 @@ export default function ComponenteCores() {
         <div className="flex flex-col items-center gap-2">
           <button
             onClick={gerarNovaPaleta}
-            className="px-6 py-3 bg-purple-600 text-teal-200 rounded-lg shadow-md hover:bg-purple-700 hover:shadow-lg transition-all duration-200 font-medium"
+            className="px-8 py-5 bg-purple-600 text-teal-200 rounded-lg shadow-md hover:bg-purple-700 hover:shadow-lg transition-all duration-200 font-medium"
             aria-label="Gerar nova paleta de cores"
           >
             🎨 Gerar Nova Bytes_Paleta
@@ -112,7 +112,7 @@ export default function ComponenteCores() {
           return (
             <div
               key={index}
-              className="w-1/5 flex flex-col justify-between items-center p-6 relative transition-all duration-300 hover:scale-105"
+              className="w-1/5 flex flex-col justify-between items-center p-6 relative transition-all duration-300 hover:scale-105 rounded-md"
               style={{ backgroundColor: cor.hex }}
             >
               {/* Indicador de cor travada */}
