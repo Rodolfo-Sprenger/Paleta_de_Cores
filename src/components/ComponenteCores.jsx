@@ -88,10 +88,10 @@ export default function ComponenteCores() {
     <div className="flex flex-col min-h-screen bg-purple-200">
       {/* Header com botão de gerar nova paleta */}
       <div className="p-6 flex justify-center bg-purple-200 shadow-sm">
-        <div className="flex flex-col items-center gap-2">
+        <div className="flex flex-col items-center gap-2"> 
           <button
             onClick={gerarNovaPaleta}
-            className="px-8 py-5 bg-purple-600 text-teal-200 rounded-lg shadow-md hover:bg-purple-700 hover:shadow-lg transition-all duration-200 font-medium"
+            className="px-8 py-5 bg-purple-600 text-teal-200 rounded-lg shadow-md hover:bg-purple-700 hover:shadow-lg transition-all duration-200 font-medium border-2"
             aria-label="Gerar nova paleta de cores"
           >
             🎨 Gerar Nova Bytes_Paleta
@@ -112,7 +112,7 @@ export default function ComponenteCores() {
           return (
             <div
               key={index}
-              className="w-1/5 flex flex-col justify-between items-center p-6 relative transition-all duration-300 hover:scale-105 rounded-md"
+              className="w-1/5 flex flex-col justify-between items-center p-6 relative transition-all duration-300 hover:scale-105 rounded-md border-2"
               style={{ backgroundColor: cor.hex }}
             >
               {/* Indicador de cor travada */}
@@ -157,7 +157,7 @@ export default function ComponenteCores() {
               <div className="flex flex-row gap-3">
                 {/* Botão de copiar */}
                 <button
-                  className="w-12 h-12 flex items-center justify-center rounded-full shadow-md hover:shadow-lg transition-all duration-200 bg-purple-300 bg-opacity-20 hover:bg-opacity-30 backdrop-blur-sm text-xl"
+                  className="w-12 h-12 flex items-center justify-center rounded-full shadow-md hover:shadow-lg transition-all duration-200 bg-purple-300 bg-opacity-20 hover:bg-opacity-30 backdrop-blur-sm text-xl border-2"
                   style={{ color: textColor }}
                   onClick={() => copiarColor(cor.hex)}
                   disabled={foiCopiado}
@@ -168,7 +168,7 @@ export default function ComponenteCores() {
 
                 {/* Botão de travar/destravar */}
                 <button
-                  className={`w-12 h-12 flex items-center justify-center rounded-full shadow-md hover:shadow-lg transition-all duration-200 text-xl ${
+                  className={`w-12 h-12 flex items-center justify-center rounded-full shadow-md hover:shadow-lg transition-all duration-200 text-xl border-2 ${
                     cor.locked
                       ? "bg-red-300 bg-opacity-90 hover:bg-red-300 text-white"
                       : "bg-green-300 bg-opacity-90 hover:bg-green-300 text-white"
